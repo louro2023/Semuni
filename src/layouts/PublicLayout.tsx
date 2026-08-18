@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, LogIn, User as UserIcon } from 'lucide-react';
+import { Menu, X, LogIn, User as UserIcon, Facebook, Instagram } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import clsx from 'clsx';
 import { Logo } from '../components/Logo';
@@ -139,15 +139,14 @@ export const PublicLayout: React.FC = () => {
                 Promovendo capacitação, independência, oportunidades, inclusão e protagonismo feminino em Nova Iguaçu.
               </p>
               <div className="mt-6 flex space-x-4">
-                {/* Social icons placeholder */}
-                <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary text-white/70 hover:text-white transition-colors">
                   <span className="sr-only">Facebook</span>
-                  <div className="w-4 h-4 bg-white/20 rounded-sm"></div>
-                </div>
-                <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
+                  <Facebook size={18} />
+                </a>
+                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary text-white/70 hover:text-white transition-colors">
                   <span className="sr-only">Instagram</span>
-                  <div className="w-4 h-4 bg-white/20 rounded-full"></div>
-                </div>
+                  <Instagram size={18} />
+                </a>
               </div>
             </div>
             
